@@ -6,3 +6,9 @@ function convertSlug() {
 
     document.getElementById('convertedText').innerText = convertedText;
 }
+function copyToClipboard() {
+    const textToCopy = document.getElementById('convertedText').innerText;
+    if (textToCopy) { 
+        navigator.clipboard.writeText(textToCopy);
+    }
+}
