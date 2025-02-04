@@ -38,10 +38,28 @@ button {
   color: #fff;
   background-color: #007bff;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 5px !important;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* DarkMode */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #555;
 }
